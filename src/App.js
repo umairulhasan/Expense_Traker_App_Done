@@ -1,11 +1,16 @@
 import React from 'react';
-import Header from './components/Header'
+import Header from './components/Header';
 import './App.css';
+import Balance from './components/Balance';
 
 function App() {
   return (
     <div>
       <Header/>
+      <div className="container">
+      <Balance/>
+
+      </div>
     </div>
   );
 }
