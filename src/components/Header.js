@@ -1,11 +1,18 @@
 import React from 'react';
 
+
+
 const Header = () => {
   return (
-      <div>
-      
-          </div> 
+      <h2>
+      Expence Tracker
+          </h2> 
    );
+
 }
 
- export default Header;
+export default Header;
+
+
+
+
