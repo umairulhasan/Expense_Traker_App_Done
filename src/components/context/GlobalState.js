@@ -40,9 +40,26 @@ payload: id
 }
 
 
+// Actions
+function addTransaction(transaction){
+
+    dispatch({
+    
+    type: 'Add_TRANSACTION', 
+    payload: transaction
+    
+     
+     });
+    
+    
+    
+    }
+
+
 return(<GlobalContext.Provider value={{
     transactions: state.transactions,
-    deleteTransaction
+    deleteTransaction,
+    addTransaction
 }}>
 
 {/* // Children is app as a prop and theey are all children represent all component use in app addtransaction,balance,header,incomeexpense etc */}
