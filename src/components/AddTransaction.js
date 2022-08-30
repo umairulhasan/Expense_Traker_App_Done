@@ -19,7 +19,7 @@ const onSubmit = e =>{
 
     id: Math.floor(Math.random() *100000),
     text,
-    amount
+    amount: +amount
   }
 
   addTransaction(newTransaction);
@@ -29,7 +29,7 @@ const onSubmit = e =>{
   return (
     <>
       <h3>Add new transaction</h3>
-      <form onSubmi={onSubmit}>
+      <form onSubmit={onSubmit}>
         <div className="form-control">
           <label htmlFor="text">Text</label>
           <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter text..." />
