@@ -24,8 +24,25 @@ export const GlobalProvider = ({ children }) => {
 
 const [state, dispatch] = useReducer(AppReducer, initialState);
 
+// Actions
+function deleteTransaction(id){
+
+dispatch({
+
+type: 'DELETE_TRANSACTION', 
+payload: id
+
+
+ });
+
+
+
+}
+
+
 return(<GlobalContext.Provider value={{
-    transactions: state.transactions
+    transactions: state.transactions,
+    deleteTransaction
 }}>
 
 {/* // Children is app as a prop and theey are all children represent all component use in app addtransaction,balance,header,incomeexpense etc */}
